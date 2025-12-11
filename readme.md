@@ -158,7 +158,7 @@ Processed fnol.pdf -> C:\autonomous-fnol-agent\backend\test-results\fnol.pdf.jso
 Processed fnol1.txt -> C:\autonomous-fnol-agent\backend\test-results\fnol1.txt.json
 Processed fnol2.txt -> C:\autonomous-fnol-agent\backend\test-results\fnol2.txt.json
 Processed fnol3.txt -> C:\autonomous-fnol-agent\backend\test-results\fnol3.txt.json
-Failed to parse PDF fnol_sample.pdf: bad XRef entry
+
 All done. Results written to C:\autonomous-fnol-agent\backend\test-results
 ```
 
