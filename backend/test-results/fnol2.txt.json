@@ -1,0 +1,30 @@
+{
+  "extractedFields": {
+    "Policy Number": "PN-XYZ-98765",
+    "Policyholder Name": "Sita Sharma",
+    "Effective Dates": {
+      "from": "01-Feb-2024",
+      "to": "31-Jan-2025"
+    },
+    "Date": "01-Feb-2024",
+    "Time": "02:15",
+    "Location": "Outer Ring Road, Hyderabad",
+    "Description": "Car reported as stolen but witness statements are inconsistent and the scene looks staged. Possible fraud.",
+    "Claimant": "Sita Sharma",
+    "Third Parties": null,
+    "Contact Details": {
+      "email": "sita@example.com",
+      "phone": null
+    },
+    "Asset Type": "vehicle",
+    "Asset ID": "TS09CD4567",
+    "Estimated Damage": 250000,
+    "Claim Type": "theft",
+    "Attachments": "Police report attached",
+    "Initial Estimate": "250000"
+  },
+  "missingFields": [],
+  "inconsistentFields": [],
+  "recommendedRoute": "Investigation",
+  "reasoning": "Description contains 'fraud'"
+}

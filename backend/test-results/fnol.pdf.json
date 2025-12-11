@@ -1,0 +1,30 @@
+{
+  "extractedFields": {
+    "Policy Number": "OTHER",
+    "Policyholder Name": "or claimant with regard",
+    "Effective Dates": null,
+    "Date": "OF BIRTH",
+    "Time": null,
+    "Location": "OF LOSS IF NOT AT SPECIFIC STREET ADDRESS:",
+    "Description": "OF ACCIDENT (ACORD 101, Additional Remarks Schedule, may be attached if more space is required)\nLOSS\n(Check if same as owner)\nPHONE #\nCELLHOMEBUS\nPRIMARY\nPHONE #\nSECONDARY\nCELLHOMEBUS\nSECONDARY E-MAIL ADDRESS:\nPRIMARY E-MAIL ADDRESS:\nDRIVER'S NAME AND ADDRESS\n(Check if same as insured)\nPHONE #\nCELLHOMEBUS\nPRIMARY\nPHONE #\nSECONDARY\nCELLHOMEBUS\nSECONDARY E-MAIL ADDRESS:\nPRIMARY E-MAIL ADDRESS:\nOWNER'S NAME AND ADDRESS\nINSURED VEHICLE\nY / N\nY / N\nY / N\n3.DID THE CHILD PASSENGER RESTRAINT SYSTEM (CHILD SEAT) SUSTAIN A LOSS AT THE TIME OF THE ACCIDENT?\n2.WAS THE CHILD PASSENGER RESTRAINT SYSTEM (CHILD SEAT) IN USE BY A CHILD DURING THE TIME OF THE ACCIDENT?\n1.WAS A STANDARD CHILD PASSENGER RESTRAINT SYSTEM (CHILD SEAT) INSTALLED IN THE VEHICLE AT THE TIME OF THE ACCIDENT?\nPOLICY NUMBER:OTHER INSURANCE ON VEHICLE - CARRIER:\nWHERE CAN VEHICLE BE SEEN?:\nDESCRIBE DAMAGE\nWHEN CAN VEHICLE BE SEEN?:ESTIMATE AMOUNT:\nUSED WITH\nPERMISSION? (Y/N)\nPURPOSE OF USE\nSTATEDRIVER'S LICENSE NUMBERDATE OF BIRTH\n(Employee, family, etc.)\nRELATION TO INSURED\nSTATEPLATE NUMBER\nV.I.N.:\nTYPE:\nBODY\nMODEL:\nMAKE:\nYEARVEH #\nAUTOMOBILE LOSS NOTICE\nDATE (MM/DD/YYYY)\nINSURED LOCATION CODEDATE OF LOSS AND TIME\nAM\nPM\nNAI",
+    "Claimant": "'S MAILING ADDRESS",
+    "Third Parties": null,
+    "Contact Details": {
+      "email": null,
+      "phone": "1988-2016"
+    },
+    "Asset Type": "vehicle",
+    "Asset ID": "istered",
+    "Estimated Damage": null,
+    "Claim Type": "injury",
+    "Attachments": "if more space is required)",
+    "Initial Estimate": null
+  },
+  "missingFields": [
+    "Effective Dates",
+    "Initial Estimate"
+  ],
+  "inconsistentFields": [],
+  "recommendedRoute": "Manual review",
+  "reasoning": "One or more mandatory fields missing ; Missing fields: Effective Dates, Initial Estimate"
+}

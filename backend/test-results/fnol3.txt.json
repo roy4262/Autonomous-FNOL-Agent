@@ -1,0 +1,30 @@
+{
+  "extractedFields": {
+    "Policy Number": "PN-MIS-55555",
+    "Policyholder Name": "Arun Reddy",
+    "Effective Dates": null,
+    "Date": "05-May-2024",
+    "Time": null,
+    "Location": "Sector 5, Noida",
+    "Description": "Water damage in the basement of the property. Estimate pending.",
+    "Claimant": "Arun Reddy",
+    "Third Parties": null,
+    "Contact Details": {
+      "email": null,
+      "phone": "+91 9123456789"
+    },
+    "Asset Type": "property",
+    "Asset ID": null,
+    "Estimated Damage": null,
+    "Claim Type": "property",
+    "Attachments": "none",
+    "Initial Estimate": null
+  },
+  "missingFields": [
+    "Effective Dates",
+    "Initial Estimate"
+  ],
+  "inconsistentFields": [],
+  "recommendedRoute": "Manual review",
+  "reasoning": "One or more mandatory fields missing ; Missing fields: Effective Dates, Initial Estimate"
+}

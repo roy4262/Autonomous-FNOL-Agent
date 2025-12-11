@@ -1,0 +1,30 @@
+{
+  "extractedFields": {
+    "Policy Number": "PN-ABC-12345",
+    "Policyholder Name": "Rahul Kumar",
+    "Effective Dates": {
+      "from": "01-Jan-2024",
+      "to": "31-Dec-2024"
+    },
+    "Date": "01-Jan-2024",
+    "Time": "14:30",
+    "Location": "MG Road, Bengaluru",
+    "Description": "Vehicle collided with a parked car. No injuries. Estimated damage approx ₹12,000.",
+    "Claimant": "Rahul Kumar",
+    "Third Parties": null,
+    "Contact Details": {
+      "email": null,
+      "phone": "+91 9876543210"
+    },
+    "Asset Type": "vehicle",
+    "Asset ID": "KA01AB1234",
+    "Estimated Damage": 12000,
+    "Claim Type": "vehicle",
+    "Attachments": "Photos attached",
+    "Initial Estimate": "12,000"
+  },
+  "missingFields": [],
+  "inconsistentFields": [],
+  "recommendedRoute": "Fast-track",
+  "reasoning": "Estimated damage (12000) < 25000"
+}

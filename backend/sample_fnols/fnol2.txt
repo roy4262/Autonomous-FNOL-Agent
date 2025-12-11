@@ -1,0 +1,17 @@
+Policy No: PN-XYZ-98765
+Policyholder Name: Sita Sharma
+Effective Dates: 01-Feb-2024 to 31-Jan-2025
+
+Date of Loss: 15-Jul-2024
+Time: 02:15
+Location: Outer Ring Road, Hyderabad
+
+Description:
+Car reported as stolen but witness statements are inconsistent and the scene looks staged. Possible fraud.
+
+Claimant: Sita Sharma
+Email: sita@example.com
+Attachments: Police report attached
+Initial Estimate: 250000
+Claim Type: theft
+Asset ID: TS09CD4567
