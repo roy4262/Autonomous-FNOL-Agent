@@ -93,7 +93,7 @@ Install and run
 # From repo root
 cd backend
 npm install
-npm start
+npm run dev
 ```
 
 The server listens on `http://localhost:5000` by default (or `PORT` env var).
