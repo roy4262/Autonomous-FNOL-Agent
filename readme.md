@@ -129,7 +129,9 @@ PowerShell upload (PDF example):
 ```powershell
 Invoke-RestMethod -Uri 'http://localhost:5000/api/upload' -Method Post -Form @{ file = Get-Item '.\backend\sample_fnols\fnol_sample.pdf' } | ConvertTo-Json -Depth 5
 ```
+
 Or with `curl`
+
 ```bash
 C:\autonomous-fnol-agent> curl -X POST http://localhost:5000/api/upload -F "file=@backend/sample_fnols/fnol_sample.pdf"
 ```
@@ -142,6 +144,25 @@ Notes
 Testing with sample documents
 
 - Example sample files are in `backend/sample_fnols/` — use the upload endpoint or the `parse-text` endpoint with file contents.
+
+Run the bundled test runner to process all samples and write JSON outputs to `backend/test-results/`:
+
+```powershell
+node backend/scripts/test-samples.js
+```
+
+Example console output when running the script (your paths may vary):
+
+```
+Processed fnol.pdf -> C:\autonomous-fnol-agent\backend\test-results\fnol.pdf.json
+Processed fnol1.txt -> C:\autonomous-fnol-agent\backend\test-results\fnol1.txt.json
+Processed fnol2.txt -> C:\autonomous-fnol-agent\backend\test-results\fnol2.txt.json
+Processed fnol3.txt -> C:\autonomous-fnol-agent\backend\test-results\fnol3.txt.json
+Failed to parse PDF fnol_sample.pdf: bad XRef entry
+All done. Results written to C:\autonomous-fnol-agent\backend\test-results
+```
+
+Check the generated JSON files in `backend/test-results/` for each sample's extraction and routing output.
 
 How extraction & routing work (brief)
 
@@ -178,4 +199,4 @@ For issues, questions, or suggestions, please open an issue on the GitHub reposi
 
 ---
 
-**Last Updated:** December 2024
+
