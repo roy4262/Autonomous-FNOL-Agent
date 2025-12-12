@@ -1,1 +1,6 @@
 backend/package-lock.json
+node_modules/
+uploads/
+.env
+test-results/
+package-lock.json
