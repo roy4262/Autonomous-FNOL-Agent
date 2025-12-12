@@ -87,6 +87,13 @@ Prerequisites
 
 - `Node.js` 16+ and `npm`
 
+  
+Clone Repositary
+
+```bash
+git clone https://github.com/roy4262/Autonomous-FNOL-Agent
+```
+
 Install and run
 
 ```powershell
@@ -106,13 +113,9 @@ curl http://localhost:5000/health
 
 API usage
 
-1. Parse raw text (JSON)
 
-```powershell
-Invoke-RestMethod -Uri 'http://localhost:5000/api/parse-text' -Method Post -Body (@{ text = 'Policy Number: POL-2024-001234; Claimant: John Doe; Date: 2024-06-15; Description: Minor collision; Estimated Damage: 12000; Claim Type: Property Damage' } | ConvertTo-Json) -ContentType 'application/json' | ConvertTo-Json -Depth 5
-```
 
-2. Upload file (text or pdf) - PowerShell example
+1. Upload file (text or pdf) - PowerShell example
 
 ```powershell
 Invoke-RestMethod -Uri 'http://localhost:5000/api/upload' -Method Post -Form @{ file = Get-Item '.\backend\sample_fnols\fnol1.txt' } | ConvertTo-Json -Depth 5
@@ -121,24 +124,27 @@ Invoke-RestMethod -Uri 'http://localhost:5000/api/upload' -Method Post -Form @{ 
 Or with `curl` (Linux/macOS or curl on Windows):
 
 ```bash
-C:\autonomous-fnol-agent> curl -X POST http://localhost:5000/api/upload -F "file=@backend/sample_fnols/fnol1.txt"
+ curl -X POST http://localhost:5000/api/upload -F "file=@backend/sample_fnols/fnol1.txt"
 ```
 
 PowerShell upload (PDF example):
 
 ```powershell
 Invoke-RestMethod -Uri 'http://localhost:5000/api/upload' -Method Post -Form @{ file = Get-Item '.\backend\sample_fnols\fnol_sample.pdf' } | ConvertTo-Json -Depth 5
+
 ```
+
+
+<img width="1493" height="796" alt="Screenshot 2025-12-11 213442" src="https://github.com/user-attachments/assets/f8e1739d-032a-4a93-9a90-2ac1977cae3a" />
 
 Or with `curl`
 
 ```bash
-C:\autonomous-fnol-agent> curl -X POST http://localhost:5000/api/upload -F "file=@backend/sample_fnols/fnol_sample.pdf"
+ curl -X POST http://localhost:5000/api/upload -F "file=@backend/sample_fnols/fnol_sample.pdf"
 ```
 
 Notes
 
-- PDF parsing requires the `pdf-parse` package. `package.json` already lists it; if PDF parsing fails, confirm that `npm install` succeeded and that the `pdf-parse` native dependencies are present.
 - Uploaded files are removed after processing.
 
 Testing with sample documents
@@ -160,7 +166,12 @@ Processed fnol2.txt -> C:\autonomous-fnol-agent\backend\test-results\fnol2.txt.j
 Processed fnol3.txt -> C:\autonomous-fnol-agent\backend\test-results\fnol3.txt.json
 
 All done. Results written to C:\autonomous-fnol-agent\backend\test-results
+
 ```
+<img width="1020" height="410" alt="Screenshot 2025-12-11 213558" src="https://github.com/user-attachments/assets/8cb8a818-41f9-4a67-8515-93e6cc02b6cd" />
+
+
+<img width="1702" height="774" alt="Screenshot 2025-12-12 114814" src="https://github.com/user-attachments/assets/5a4e9d09-27c0-459e-a78a-9b7241ec4410" />
 
 Check the generated JSON files in `backend/test-results/` for each sample's extraction and routing output.
 
@@ -172,26 +183,16 @@ How extraction & routing work (brief)
 - Claim type inference uses simple keyword rules (e.g., presence of `injury` → `injury`).
 - Damage threshold is enforced using `FAST_TRACK_THRESHOLD = 25000`.
 
-Extending the agent
 
-- Add or refine regex patterns in `backend/extractor.js` for better coverage.
-- Add ML/NLP models for higher accuracy (replace or augment rule-based detection).
-- Add a persistence layer to store extracted claims and routing history.
 
 Troubleshooting
 
 - If uploads return `PDF parsing not available`, run `npm install pdf-parse` and ensure Node can build dependencies.
 - If fields are not extracted correctly, inspect `backend/extractor.js` and add or adjust patterns.
 
-Next steps (suggested)
 
-- Add unit tests for `extractor.js` to validate extraction across sample FNOLs.
-- Add an example client script that batches sample files and prints JSON outputs.
 
-If you want, I can:
 
-- Run the server locally and exercise the sample files, or
-- Add a small `test.js` script that posts the sample files and prints results.
 
 ---
 
